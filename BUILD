@@ -1,8 +1,8 @@
-load("@BazelDownstream//:downstream.bzl", "downstream_helloworld")
+load("@BazelRecursiveMiddle//:recursive_middle.bzl", "recursive_middle_helloworld")
 
 exports_files([
-    "downstream_rule.sh",
+    "recursive_middle_rule.sh",
 ])
-downstream_helloworld(
-    name = "downstream_instance",
+recursive_middle_helloworld(
+    name = "recursive_middle_instance",
 )
